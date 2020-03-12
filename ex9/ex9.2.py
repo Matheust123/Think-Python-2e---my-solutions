@@ -17,10 +17,10 @@ no “e” and compute the percentage of the words in the list that have no “e
 """
 
 def has_no_e(word):
-    for letter in word:
-        if letter == 'e':
-            return False
-    return True
+	if "e" not in word:
+		return True
+	else:
+		return False
 
 
 fin = open('words.txt')
